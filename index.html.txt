@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haus of Ilona</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-gold': '#C7A86C',
+              'brand-dark': '#1F1F1F',
+              'brand-light': '#FAF9F6',
+              'brand-blush': '#EADFD7',
+              'brand-taupe': '#B8A89A',
+              'brand-slate': '#6C757D',
+              'brand-dusty-blue': '#a4bcd1',
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+            },
+            letterSpacing: {
+              widest: '.3em',
+              wider: '.1em',
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': {
+                  opacity: '0',
+                  transform: 'translateY(30px)'
+                },
+                '100%': {
+                  opacity: '1',
+                  transform: 'translateY(0)'
+                },
+              },
+              'ken-burns': {
+                '0%': { transform: 'scale(1) translate(0, 0)' },
+                '100%': { transform: 'scale(1.1) translate(-2%, -1%)' },
+              },
+              'scroll': {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-100%)' },
+              }
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 1s cubic-bezier(0.645, 0.045, 0.355, 1) forwards',
+              'ken-burns': 'ken-burns 25s ease-in-out infinite alternate',
+              'scroll': 'scroll 40s linear infinite',
+              'scroll-fast': 'scroll 15s linear infinite',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FAF9F6; /* brand-light (Ivory White) */
+        color: #1F1F1F; /* brand-dark (Deep Charcoal) */
+        font-size: 17px;
+        line-height: 1.7;
+        font-family: "Montserrat", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FAF9F6;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #B8A89A; /* brand-taupe */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #C7A86C; /* brand-gold */
+      }
+      .text-balance { text-wrap: balance; }
+      .text-shadow-strong {
+        text-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+      }
+      .card-hover-effect {
+        transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+      .card-hover-effect:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+      }
+       .img-hover-effect {
+        transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+       }
+       .group:hover .img-hover-effect {
+        transform: scale(1.05);
+       }
+       .aspect-video-placeholder {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+       }
+       .aspect-video-placeholder > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       }
+       .aspect-portrait-placeholder {
+        position: relative;
+        width: 100%;
+        padding-bottom: 125%; /* 4:5 Aspect Ratio */
+      }
+      .aspect-portrait-placeholder > * {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+</head>
+<body>
+    <header class="fixed top-0 left-0 right-0 z-50 bg-brand-light/80 backdrop-blur-lg shadow-sm">
+      <div class="container mx-auto px-6 lg:px-8">
+        <div class="flex items-center justify-end h-24">
+          <nav>
+            <a href="https://calendly.com/d/ctfn-k5n-w6x" target="_blank" rel="noopener noreferrer" class="group flex items-center font-sans text-sm font-semibold tracking-wider uppercase text-brand-dark bg-brand-gold shadow-md hover:shadow-lg hover:shadow-brand-gold/40 transition-all duration-300 rounded-sm px-6 py-3 transform hover:-translate-y-0.5">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+              <span>Book a Call</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-24">
+      <!-- Hero Section -->
+      <section class="relative min-h-[95vh] flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden bg-brand-dark">
+        <div class="absolute inset-0 h-full w-full overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=3540&auto=format&fit=crop" alt="Elegant background of black velvety sand with gold glitter" class="absolute z-0 w-full h-full object-cover opacity-50 animate-ken-burns">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"></div>
+        </div>
+        <div class="relative z-10 w-full max-w-6xl">
+          <div class="js-scroll-trigger opacity-0">
+            <p class="font-sans text-sm md:text-base tracking-widest text-brand-gold font-medium uppercase mb-8">
+              For experts with a world-class offer... but a second-rate funnel.
+            </p>
+          </div>
+          <div class="js-scroll-trigger opacity-0" data-delay="0.2">
+            <h1 class="font-serif text-6xl sm:text-7xl lg:text-8xl font-medium tracking-tight text-balance text-brand-light">
+              Stop <span class="italic text-brand-gold">Leaking</span> Revenue.
+            </h1>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-brand-gold mt-6 text-balance italic">
+              We Will Design, Write, and Build Your Entire High-Converting Sales Funnel For You.
+            </h2>
+          </div>
+          <div class="js-scroll-trigger opacity-0" data-delay="0.4">
+            <p class="mt-10 max-w-3xl mx-auto text-xl text-brand-light/80 leading-relaxed text-balance">
+              The complete, "done-for-you" service that transforms your expertise into an automated sales machine. All you have to do is show up for the final review.
+            </p>
+          </div>
+          
+          <!-- VSL Placeholder -->
+          <div class="js-scroll-trigger opacity-0" data-delay="0.5">
+            <div class="mt-12 max-w-3xl mx-auto">
+                <div id="vsl-trigger" class="aspect-video-placeholder bg-black/50 border border-brand-gold/20 rounded-lg shadow-2xl backdrop-blur-sm group cursor-pointer">
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="w-20 h-20 bg-brand-gold/80 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-gold">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10 text-brand-dark ml-1">
+                                <path d="M7 6v12l10-6z"></path>
+                            </svg>
+                        </div>
+                        <p class="mt-4 font-sans text-sm tracking-wider uppercase text-brand-light">Watch The 2-Min Overview</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+          <div class="js-scroll-trigger opacity-0" data-delay="0.6">
+            <div class="mt-12">
+              <a href="https://calendly.com/d/ctfn-k5n-w6x" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center group text-center font-sans font-medium tracking-wider uppercase rounded-sm px-10 py-4 transition-all duration-300 ease-in-out transform shadow-lg text-base text-brand-dark bg-brand-gold hover:shadow-2xl hover:shadow-brand-gold/50 hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span class="relative z-10">Book Your FREE Funnel Strategy Call</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Problem Section -->
+      <section class="py-24 md:py-40 bg-brand-light">
+        <div class="container mx-auto px-6 lg:px-8 max-w-7xl">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div class="js-scroll-trigger opacity-0">
+                    <p class="font-sans text-sm tracking-wider text-brand-gold uppercase font-medium mb-4">The Bottleneck</p>
+                    <h2 class="font-serif text-5xl md:text-6xl font-medium text-brand-dark text-balance leading-tight">The Problem Isn't Your Offer. <span class="italic text-brand-gold">It's Your System.</span></h2>
+                    <p class="text-xl text-brand-slate max-w-prose mt-8 leading-relaxed">
+                      You are brilliant at what you do. Your clients get transformative results. The issue is a chronic leak: <strong class="text-brand-dark font-semibold">you lack an automated, predictable system for selling it at scale.</strong>
+                    </p>
+                </div>
+                <div class="js-scroll-trigger opacity-0" data-delay="0.2">
+                  <div class="relative group">
+                    <div class="absolute -inset-4 bg-brand-blush/50 rounded-sm transform transition-transform duration-500 group-hover:rotate-[4deg]"></div>
+                    <div class="relative z-10 overflow-hidden rounded-sm shadow-xl">
+                      <img 
+                        src="https://i.imgur.com/6NW9oOp.jpeg?v=2" 
+                        alt="Frustrated professional representing a business bottleneck." 
+                        class="w-full h-auto object-cover img-hover-effect"
+                        loading="lazy"
+                      >
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Solution Section -->
+      <section class="py-24 md:py-40 bg-brand-dusty-blue/10">
+         <div class="container mx-auto px-6 lg:px-8 max-w-7xl">
+          <div class="text-center max-w-4xl mx-auto">
+            <div class="js-scroll-trigger opacity-0">
+              <p class="font-sans text-sm tracking-wider text-brand-gold uppercase font-medium mb-4">The Service</p>
+              <h2 class="font-serif text-5xl md:text-6xl font-medium text-brand-dark text-balance leading-tight">The <span class="italic text-brand-gold">Signature Solution</span> Your Business Demands</h2>
+              <p class="text-xl text-brand-slate max-w-3xl mx-auto mt-6 text-balance leading-relaxed">
+                Most "funnel" solutions are incomplete. We provide a complete, done-for-you service that fills every capability gap, building your entire sales asset from the ground up.
+              </p>
+            </div>
+          </div>
+          <div class="mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="js-scroll-trigger opacity-0" data-delay="0">
+              <div class="p-10 bg-brand-light/80 backdrop-blur-sm h-full rounded-sm card-hover-effect border border-transparent hover:border-brand-blush">
+                <div class="text-brand-gold w-12 h-12 mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </div>
+                <h3 class="font-serif text-3xl font-medium text-brand-dark">Sales Funnel Strategy</h3>
+                <p class="mt-3 text-brand-slate leading-relaxed">Mapping the entire customer journey from first touchpoint to final conversion.</p>
+              </div>
+            </div>
+            <div class="js-scroll-trigger opacity-0" data-delay="0.15">
+              <div class="p-10 bg-brand-light/80 backdrop-blur-sm h-full rounded-sm card-hover-effect border border-transparent hover:border-brand-blush">
+                <div class="text-brand-gold w-12 h-12 mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V6a4 4 0 0 0-4-4h-4z"></path>
+                    <path d="M14 2v4h4"></path><path d="M4 10h4"></path><path d="M4 14h4"></path><path d="M4 18h4"></path><path d="M4 6h4"></path>
+                  </svg>
+                </div>
+                <h3 class="font-serif text-3xl font-medium text-brand-dark">World-Class Copy</h3>
+                <p class="mt-3 text-brand-slate leading-relaxed">Writing every headline, email, and CTA to articulate your value and compel action.</p>
+              </div>
+            </div>
+            <div class="js-scroll-trigger opacity-0" data-delay="0.3">
+              <div class="p-10 bg-brand-light/80 backdrop-blur-sm h-full rounded-sm card-hover-effect border border-transparent hover:border-brand-blush">
+                <div class="text-brand-gold w-12 h-12 mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <h3 class="font-serif text-3xl font-medium text-brand-dark">High-End Design</h3>
+                <p class="mt-3 text-brand-slate leading-relaxed">Creating a cohesive suite of pages designed to build trust and elevate your brand.</p>
+              </div>
+            </div>
+            <div class="js-scroll-trigger opacity-0" data-delay="0.45">
+              <div class="p-10 bg-brand-light/80 backdrop-blur-sm h-full rounded-sm card-hover-effect border border-transparent hover:border-brand-blush">
+                <div class="text-brand-gold w-12 h-12 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 20.5c.5 1 1.5 1.5 2.5 1.5s2-.5 2.5-1.5l1-2c.5-1 1-1.5 2-1.5s1.5.5 2 1.5l1 2c.5 1 1.5 1.5 2.5 1.5s2-.5 2.5-1.5"></path>
+                        <path d="M3.5 15c-1 0-1.5.5-1.5 1.5s.5 1.5 1.5 1.5 1.5-.5 1.5-1.5-.5-1.5-1.5-1.5z"></path>
+                        <path d="M10 3.5c.5-1 1.5-1.5 2.5-1.5s2 .5 2.5 1.5l1 2c.5 1 1 1.5 2 1.5s1.5-.5 2-1.5l1-2c.5-1 1.5-1.5 2.5-1.5s2 .5 2.5 1.5"></path>
+                        <path d="M3.5 9c-1 0-1.5.5-1.5 1.5s.5 1.5 1.5 1.5 1.5-.5 1.5-1.5-.5-1.5-1.5-1.5z"></path>
+                        <path d="M14 12c0 1-1.5 2-2.5 2s-2.5-1-2.5-2 1.5-2 2.5-2 2.5 1 2.5 2z"></path>
+                    </svg>
+                </div>
+                <h3 class="font-serif text-3xl font-medium text-brand-dark">Full Tech Build-Out</h3>
+                <p class="mt-3 text-brand-slate leading-relaxed">Handling all backend integrations and automation so you can remain hands-off.</p>
+              </div>
+            </div>
+            <div class="js-scroll-trigger opacity-0" data-delay="0.6">
+              <div class="p-10 bg-brand-light/80 backdrop-blur-sm h-full rounded-sm card-hover-effect border border-transparent hover:border-brand-blush">
+                <div class="text-brand-gold w-12 h-12 mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                    <path d="m2 7 10 7 10-7"></path>
+                  </svg>
+                </div>
+                <h3 class="font-serif text-3xl font-medium text-brand-dark">Email Automation</h3>
+                <p class="mt-3 text-brand-slate leading-relaxed">Building the nurture and follow-up sequences that convert leads on autopilot.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Founder Section -->
+      <section class="py-24 md:py-40 bg-brand-dusty-blue/10">
+        <div class="container mx-auto px-6 lg:px-8 max-w-7xl">
+          <div class="grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16 items-center">
+            <!-- Image Column -->
+            <div class="md:col-span-2 js-scroll-trigger opacity-0">
+              <div class="relative group">
+                <div class="absolute -inset-4 bg-brand-blush/50 rounded-sm transform transition-transform duration-500 group-hover:rotate-[-3deg]"></div>
+                <div class="relative z-10 overflow-hidden rounded-sm shadow-xl">
+                   <img 
+                    src="https://i.imgur.com/vvIGKpJ.jpeg?v=2" 
+                    alt="Portrait of Ilona, founder of Haus of Ilona." 
+                    class="w-full h-auto object-cover img-hover-effect"
+                    loading="lazy"
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Text Column -->
+            <div class="md:col-span-3 js-scroll-trigger opacity-0" data-delay="0.2">
+              <p class="font-sans text-sm tracking-wider text-brand-gold uppercase font-medium mb-4">The Architect</p>
+              <h2 class="font-serif text-5xl md:text-6xl font-medium text-brand-dark text-balance leading-tight">Meet Ilona</h2>
+              <p class="font-serif text-2xl text-brand-slate mt-4 italic">The architect behind your next breakthrough.</p>
+              <p class="text-xl text-brand-slate max-w-prose mt-8 leading-relaxed">
+                For over a decade, I've been obsessed with a single question: why do world-class experts so often struggle with second-rate sales systems?
+                <br><br>
+                Haus of Ilona was born from that obsession. It's not just a service; it's my mission to build the elegant, high-performance sales assets that your expertise truly deserves. We handle every detail, so you can focus on what you do best: changing lives.
+              </p>
+              <div class="mt-10">
+                  <a href="#cta" class="font-sans font-semibold text-brand-dark tracking-wider group">
+                      <span>Let's Build Your Legacy</span>
+                      <span class="inline-block transition-transform duration-300 group-hover:translate-x-2 ml-2">&rarr;</span>
+                  </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case Studies Section -->
+      <section class="py-24 md:py-40 bg-brand-dusty-blue/10 overflow-hidden">
+        <div class="container mx-auto px-6 lg:px-8 max-w-7xl">
+          <div class="text-center max-w-4xl mx-auto">
+            <div class="js-scroll-trigger opacity-0">
+              <p class="font-sans text-sm tracking-wider text-brand-gold uppercase font-medium mb-4">Client Journeys</p>
+              <h2 class="font-serif text-5xl md:text-6xl font-medium text-brand-dark text-balance leading-tight">From Bottleneck to <span class="italic text-brand-gold">Breakthrough</span></h2>
+              <p class="text-xl text-brand-slate max-w-3xl mx-auto mt-6 text-balance leading-relaxed">
+                We partner with world-class experts to build the systems their businesses deserve. The journey is a story of strategic collaboration.
+              </p>
+            </div>
+          </div>
+          <div class="mt-24 space-y-20">
+            <!-- Case Study 1 -->
+            <div class="js-scroll-trigger opacity-0">
+              <div class="grid md:grid-cols-12 gap-x-8 gap-y-4 items-center">
+                <div class="md:col-span-4 lg:col-span-3 text-center md:text-right">
+                  <h3 class="font-serif text-4xl font-medium text-brand-dark">Coach Mike</h3>
+                  <p class="font-sans text-brand-gold tracking-wider uppercase font-semibold">Health & Wellness</p>
+                </div>
+                <div class="md:col-span-8 lg:col-span-9 relative p-8 md:p-12 bg-white rounded-sm border border-brand-blush/50 shadow-lg">
+                  <div class="absolute -top-10 -right-10 md:-top-14 md:-right-14 transform rotate-6 bg-brand-gold text-brand-dark text-center rounded-sm shadow-xl p-4 w-40">
+                    <div class="font-serif font-bold text-5xl leading-none tracking-tighter">5.4x</div>
+                    <div class="font-sans text-sm font-semibold tracking-wider uppercase mt-1">Conversion Rate</div>
+                  </div>
+                  <div class="space-y-6">
+                    <div class="js-scroll-trigger opacity-0" data-delay="0.1">
+                      <p class="font-sans text-sm tracking-wider uppercase text-brand-slate font-semibold">The Challenge</p>
+                      <p class="text-lg text-brand-slate">His funnel booked 134 calls but only closed 5 clients. The system was attracting quantity, not the <strong class="text-brand-dark">quality</strong> of leads his high-ticket offer demanded.</p>
+                    </div>
+                    <div class="js-scroll-trigger opacity-0" data-delay="0.2">
+                      <div class="w-full h-px bg-gradient-to-r from-brand-gold/0 via-brand-gold/50 to-brand-gold/0"></div>
+                    </div>
+                    <div class="js-scroll-trigger opacity-0" data-delay="0.3">
+                       <p class="font-sans text-sm tracking-wider uppercase text-brand-gold font-semibold">The Breakthrough</p>
+                      <p class="text-lg text-brand-slate">We re-engineered his VSL funnel to pre-qualify and pre-sell leads. In the following month, 127 calls resulted in <strong class="text-brand-dark">27 new high-ticket clients.</strong></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <!-- Case Study 2 -->
+             <div class="js-scroll-trigger opacity-0">
+              <div class="grid md:grid-cols-12 gap-x-8 gap-y-4 items-center">
+                <div class="md:col-span-4 lg:col-span-3 text-center md:text-right md:order-2">
+                  <h3 class="font-serif text-4xl font-medium text-brand-dark">Dee</h3>
+                  <p class="font-sans text-brand-gold tracking-wider uppercase font-semibold">Empowerment Coach</p>
+                </div>
+                <div class="md:col-span-8 lg:col-span-9 relative p-8 md:p-12 bg-white rounded-sm border border-brand-blush/50 shadow-lg md:order-1">
+                  <div class="absolute -top-10 -left-10 md:-top-14 md:-left-14 transform -rotate-6 bg-brand-gold text-brand-dark text-center rounded-sm shadow-xl p-4 w-40">
+                    <div class="font-serif font-bold text-5xl leading-none tracking-tighter">16x</div>
+                    <div class="font-sans text-sm font-semibold tracking-wider uppercase mt-1">ROAS</div>
+                  </div>
+                  <div class="space-y-6">
+                    <div class="js-scroll-trigger opacity-0" data-delay="0.1">
+                      <p class="font-sans text-sm tracking-wider uppercase text-brand-slate font-semibold">The Challenge</p>
+                      <p class="text-lg text-brand-slate">Dee had a powerful message but needed a cost-effective way to launch her offer and enroll her first clients without a massive ad budget.</p>
+                    </div>
+                     <div class="js-scroll-trigger opacity-0" data-delay="0.2">
+                      <div class="w-full h-px bg-gradient-to-r from-brand-gold/0 via-brand-gold/50 to-brand-gold/0"></div>
+                    </div>
+                    <div class="js-scroll-trigger opacity-0" data-delay="0.3">
+                       <p class="font-sans text-sm tracking-wider uppercase text-brand-gold font-semibold">The Breakthrough</p>
+                      <p class="text-lg text-brand-slate">With a simple, elegant webinar funnel we built, she invested just <strong class="text-brand-dark">$250 in ads</strong> to generate <strong class="text-brand-dark">$4,000 in revenue</strong>, proving the model and giving her the capital to scale.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Case Study 3 -->
+            <div class="js-scroll-trigger opacity-0">
+              <div class="grid md:grid-cols-12 gap-x-8 gap-y-4 items-center">
+                <div class="md:col-span-4 lg:col-span-3 text-center md:text-right">
+                  <h3 class="font-serif text-4xl font-medium text-brand-dark">Abby</h3>
+                  <p class="font-sans text-brand-gold tracking-wider uppercase font-semibold">Amazon FBA Coach</p>
+                </div>
+                <div class="md:col-span-8 lg:col-span-9 relative p-8 md:p-12 bg-white rounded-sm border border-brand-blush/50 shadow-lg">
+                  <div class="absolute -top-10 -right-10 md:-top-14 md:-right-14 transform rotate-6 bg-brand-gold text-brand-dark text-center rounded-sm shadow-xl p-4 w-40">
+                    <div class="font-serif font-bold text-5xl leading-none tracking-tighter">$100K</div>
+                    <div class="font-sans text-sm font-semibold tracking-wider uppercase mt-1">Peak Month</div>
+                  </div>
+                  <div class="space-y-6">
+                    <div class="js-scroll-trigger opacity-0" data-delay="0.1">
+                      <p class="font-sans text-sm tracking-wider uppercase text-brand-slate font-semibold">The Challenge</p>
+                      <p class="text-lg text-brand-slate">Abby was an organic marketing powerhouse, growing a massive social following. Yet, her income was stuck at $2k/month. She had the audience but no system to predictably convert followers into high-ticket clients.</p>
+                    </div>
+                    <div class="js-scroll-trigger opacity-0" data-delay="0.2">
+                      <div class="w-full h-px bg-gradient-to-r from-brand-gold/0 via-brand-gold/50 to-brand-gold/0"></div>
+                    </div>
+                    <div class="js-scroll-trigger opacity-0" data-delay="0.3">
+                       <p class="font-sans text-sm tracking-wider uppercase text-brand-gold font-semibold">The Breakthrough</p>
+                      <p class="text-lg text-brand-slate">We designed and implemented an automated sales funnel that monetized her audience on autopilot. She rapidly scaled past $20k, then $40k months, and went on to have <strong class="text-brand-dark">$80k and $100k months</strong>, transforming her influence into a true empire.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Payoff Section -->
+      <section class="py-24 md:py-40 bg-brand-light">
+        <div class="container mx-auto px-6 lg:px-8 max-w-7xl">
+            <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+                <div class="md:order-2 js-scroll-trigger opacity-0">
+                    <p class="font-sans text-sm tracking-wider text-brand-gold uppercase font-medium mb-4">The Payoff</p>
+                    <h2 class="font-serif text-5xl md:text-6xl font-medium text-brand-dark text-balance leading-tight">Focus On What You Do Best. <span class="italic text-brand-gold">We'll Handle the Rest.</span></h2>
+                    <p class="text-xl text-brand-slate max-w-prose mt-8 leading-relaxed">
+                      Imagine the peace of mind that comes from knowing you have a predictable, automated system generating qualified calls for your business, 24/7. This isn't just about more revenue; it's about <strong class="text-brand-dark font-semibold">reclaiming your time and scaling your impact.</strong>
+                    </p>
+                </div>
+                <div class="md:order-1 js-scroll-trigger opacity-0" data-delay="0.2">
+                  <div class="relative group">
+                    <div class="absolute -inset-4 bg-brand-dusty-blue/20 rounded-sm transform transition-transform duration-500 group-hover:rotate-[-4deg]"></div>
+                    <div class="relative z-10 overflow-hidden rounded-sm shadow-xl">
+                      <img 
+                        src="https://i.imgur.com/lSpsD1y.jpeg?v=1" 
+                        alt="A successful professional feeling relieved and accomplished." 
+                        class="w-full h-auto object-cover img-hover-effect"
+                        loading="lazy"
+                      >
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </section>
+      
+      <!-- CTA Section -->
+      <section id="cta" class="relative py-24 md:py-40 bg-brand-dark text-brand-light">
+        <div class="absolute inset-0 h-full w-full overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1599233827598-c913c3583c27?q=80&w=3538&auto=format&fit=crop" alt="Abstract gold and black texture" class="absolute z-0 w-full h-full object-cover opacity-20">
+          <div class="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-brand-dark"></div>
+        </div>
+        <div class="relative z-10 container mx-auto px-6 lg:px-8 text-center max-w-4xl">
+          <div class="js-scroll-trigger opacity-0">
+            <h2 class="font-serif text-5xl md:text-7xl font-medium text-balance leading-tight">
+              Ready to Build Your <span class="italic text-brand-gold">Legacy</span> Asset?
+            </h2>
+            <p class="mt-8 text-xl max-w-3xl mx-auto text-brand-light/80 leading-relaxed text-balance">
+              Your expertise deserves a world-class system to sell it. Let's have a brief, no-pressure conversation to map out what that system could look like for your business.
+            </p>
+          </div>
+          <div class="js-scroll-trigger opacity-0" data-delay="0.2">
+            <div class="mt-12">
+              <a href="https://calendly.com/d/ctfn-k5n-w6x" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center group text-center font-sans font-medium tracking-wider uppercase rounded-sm px-10 py-4 transition-all duration-300 ease-in-out transform shadow-lg text-base text-brand-dark bg-brand-gold hover:shadow-2xl hover:shadow-brand-gold/50 hover:-translate-y-1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-3 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <span>Book Your FREE Funnel Strategy Call</span>
+              </a>
+              <p class="mt-6 text-sm text-brand-slate tracking-wide">100% free, no obligation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- VSL Modal -->
+    <div id="vsl-modal" class="fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300 opacity-0 pointer-events-none" role="dialog" aria-modal="true">
+      <div id="vsl-modal-content" class="relative w-full max-w-4xl bg-brand-dark rounded-lg shadow-2xl transform transition-transform duration-300 scale-95">
+        <div class="aspect-video-placeholder">
+          <iframe id="vsl-iframe" class="rounded-lg" src="" data-src="https://www.youtube.com/embed/g6Ebs4xW7u8?autoplay=1&rel=0&showinfo=0&modestbranding=1" title="Video Sales Letter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <button id="vsl-close" aria-label="Close video player" class="absolute -top-4 -right-4 w-10 h-10 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <footer class="bg-brand-dark text-brand-light/50 py-16">
+      <div class="container mx-auto px-6 lg:px-8 text-center">
+        <p class="font-sans text-sm tracking-wider">&copy; 2024 Haus of Ilona. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
+
