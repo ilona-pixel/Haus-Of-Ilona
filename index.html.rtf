@@ -1,0 +1,562 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red70\green137\blue204;\red24\green24\blue24;\red140\green211\blue254;
+\red202\green202\blue202;\red109\green109\blue109;\red194\green126\blue101;\red212\green212\blue212;\red79\green123\blue61;
+\red167\green197\blue152;}
+{\*\expandedcolortbl;;\cssrgb\c33725\c61176\c83922;\cssrgb\c12157\c12157\c12157;\cssrgb\c61176\c86275\c99608;
+\cssrgb\c83137\c83137\c83137;\cssrgb\c50196\c50196\c50196;\cssrgb\c80784\c56863\c47059;\cssrgb\c86275\c86275\c86275;\cssrgb\c37647\c54510\c30588;
+\cssrgb\c70980\c80784\c65882;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 <!DOCTYPE\cf4 \strokec4  html\cf2 \strokec2 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 <\cf2 \strokec2 html\cf5 \strokec5  \cf4 \strokec4 lang\cf6 \strokec6 =\cf7 \strokec7 "en"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "scroll-smooth"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3   \cf6 \strokec6 <\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 charset\cf6 \strokec6 =\cf7 \strokec7 "UTF-8"\cf5 \strokec5  \cf6 \strokec6 />\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "icon"\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "image/svg+xml"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "/vite.svg"\cf5 \strokec5  \cf6 \strokec6 />\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 meta\cf5 \strokec5  \cf4 \strokec4 name\cf6 \strokec6 =\cf7 \strokec7 "viewport"\cf5 \strokec5  \cf4 \strokec4 content\cf6 \strokec6 =\cf7 \strokec7 "width=device-width, initial-scale=1.0"\cf5 \strokec5  \cf6 \strokec6 />\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \strokec5 Haus of Ilona\cf6 \strokec6 </\cf2 \strokec2 title\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://cdn.tailwindcss.com"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "preconnect"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "preconnect"\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.gstatic.com"\cf5 \strokec5  \cf4 \strokec4 crossorigin\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 link\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@300;400;500;600&display=swap"\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "stylesheet"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       tailwind\cf8 \strokec8 .\cf5 \strokec5 config \cf8 \strokec8 =\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         theme\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3           extend\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3             colors\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'brand-gold'\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 '#C7A86C'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'brand-dark'\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 '#1F1F1F'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'brand-light'\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 '#FAF9F6'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'brand-blush'\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 '#EADFD7'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'brand-taupe'\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 '#B8A89A'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'brand-slate'\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 '#6C757D'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'brand-dusty-blue'\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 '#a4bcd1'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3             fontFamily\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3               serif\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf7 \strokec7 '"Playfair Display"'\cf8 \strokec8 ,\cf5 \strokec5  \cf7 \strokec7 'serif'\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
+\cb3               sans\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 [\cf7 \strokec7 '"Montserrat"'\cf8 \strokec8 ,\cf5 \strokec5  \cf7 \strokec7 'sans-serif'\cf8 \strokec8 ],\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3             letterSpacing\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3               widest\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 '.3em'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3               wider\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 '.1em'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3             keyframes\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'fade-in-up'\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf7 \strokec7 '0%'\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                   opacity\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 '0'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                   transform\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 'translateY(30px)'\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                 \cf7 \strokec7 '100%'\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                   opacity\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 '1'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3                   transform\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 'translateY(0)'\cf5 \cb1 \strokec5 \
+\cb3                 \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3               \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'ken-burns'\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf7 \strokec7 '0%'\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  transform\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 'scale(1) translate(0, 0)'\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                 \cf7 \strokec7 '100%'\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  transform\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 'scale(1.1) translate(-2%, -1%)'\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3               \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'scroll'\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3                 \cf7 \strokec7 '0%'\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  transform\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 'translateX(0)'\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3                 \cf7 \strokec7 '100%'\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  transform\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 'translateX(-100%)'\cf5 \strokec5  \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3               \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3             animation\cf8 \strokec8 :\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'fade-in-up'\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 'fade-in-up 1s cubic-bezier(0.645, 0.045, 0.355, 1) forwards'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'ken-burns'\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 'ken-burns 25s ease-in-out infinite alternate'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'scroll'\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 'scroll 40s linear infinite'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3               \cf7 \strokec7 'scroll-fast'\cf8 \strokec8 :\cf5 \strokec5  \cf7 \strokec7 'scroll 15s linear infinite'\cf8 \strokec8 ,\cf5 \cb1 \strokec5 \
+\cb3             \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3           \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3         \cf8 \strokec8 \},\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf2 \strokec2 body\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 background-color:\cf5 \strokec5  #FAF9F6\cf8 \strokec8 ;\cf5 \strokec5  \cf9 \strokec9 /* brand-light (Ivory White) */\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 color:\cf5 \strokec5  #1F1F1F\cf8 \strokec8 ;\cf5 \strokec5  \cf9 \strokec9 /* brand-dark (Deep Charcoal) */\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 font-size:\cf5 \strokec5  \cf10 \strokec10 17px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 line-height:\cf5 \strokec5  \cf10 \strokec10 1.7\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 font-family:\cf5 \strokec5  \cf7 \strokec7 "Montserrat"\cf8 \strokec8 ,\cf5 \strokec5  \cf7 \strokec7 sans-serif\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 -webkit-font-smoothing:\cf5 \strokec5  \cf7 \strokec7 antialiased\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 -moz-osx-font-smoothing:\cf5 \strokec5  \cf7 \strokec7 grayscale\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 overflow-x:\cf5 \strokec5  \cf7 \strokec7 hidden\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3       \cf2 \strokec2 ::-webkit-scrollbar\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 width:\cf5 \strokec5  \cf10 \strokec10 8px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3       \cf2 \strokec2 ::-webkit-scrollbar-track\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 background:\cf5 \strokec5  #FAF9F6\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3       \cf2 \strokec2 ::-webkit-scrollbar-thumb\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 background:\cf5 \strokec5  #B8A89A\cf8 \strokec8 ;\cf5 \strokec5  \cf9 \strokec9 /* brand-taupe */\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 border-radius:\cf5 \strokec5  \cf10 \strokec10 4px\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3       \cf2 \strokec2 ::-webkit-scrollbar-thumb:hover\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 background:\cf5 \strokec5  #C7A86C\cf8 \strokec8 ;\cf5 \strokec5  \cf9 \strokec9 /* brand-gold */\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3       \cf2 \strokec2 .text-balance\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \strokec5  \cf4 \strokec4 text-wrap:\cf5 \strokec5  \cf7 \strokec7 balance\cf8 \strokec8 ;\cf5 \strokec5  \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3       \cf2 \strokec2 .text-shadow-strong\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 text-shadow:\cf5 \strokec5  \cf10 \strokec10 0\cf5 \strokec5  \cf10 \strokec10 2px\cf5 \strokec5  \cf10 \strokec10 20px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf10 \strokec10 0\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 0\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 0\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 0.8\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3       \cf2 \strokec2 .card-hover-effect\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 transform\cf5 \strokec5  \cf10 \strokec10 0.4s\cf5 \strokec5  \cf7 \strokec7 cubic-bezier(\cf10 \strokec10 0.19\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 1\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 0.22\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 1\cf7 \strokec7 )\cf8 \strokec8 ,\cf5 \strokec5  \cf7 \strokec7 box-shadow\cf5 \strokec5  \cf10 \strokec10 0.4s\cf5 \strokec5  \cf7 \strokec7 cubic-bezier(\cf10 \strokec10 0.19\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 1\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 0.22\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 1\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3       \cf2 \strokec2 .card-hover-effect:hover\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 translateY(\cf10 \strokec10 -10px\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 box-shadow:\cf5 \strokec5  \cf10 \strokec10 0\cf5 \strokec5  \cf10 \strokec10 25px\cf5 \strokec5  \cf10 \strokec10 50px\cf5 \strokec5  \cf10 \strokec10 -12px\cf5 \strokec5  \cf7 \strokec7 rgba(\cf10 \strokec10 0\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 0\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 0\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 0.1\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3        \cf2 \strokec2 .img-hover-effect\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 transition:\cf5 \strokec5  \cf7 \strokec7 transform\cf5 \strokec5  \cf10 \strokec10 0.6s\cf5 \strokec5  \cf7 \strokec7 cubic-bezier(\cf10 \strokec10 0.19\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 1\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 0.22\cf8 \strokec8 ,\cf5 \strokec5  \cf10 \strokec10 1\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3        \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3        \cf2 \strokec2 .group:hover\cf5 \strokec5  \cf2 \strokec2 .img-hover-effect\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 transform:\cf5 \strokec5  \cf7 \strokec7 scale(\cf10 \strokec10 1.05\cf7 \strokec7 )\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3        \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3        \cf2 \strokec2 .aspect-video-placeholder\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 relative\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 width:\cf5 \strokec5  \cf10 \strokec10 100%\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 height:\cf5 \strokec5  \cf10 \strokec10 0\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 padding-bottom:\cf5 \strokec5  \cf10 \strokec10 56.25%\cf8 \strokec8 ;\cf5 \strokec5  \cf9 \strokec9 /* 16:9 Aspect Ratio */\cf5 \cb1 \strokec5 \
+\cb3        \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3        \cf2 \strokec2 .aspect-video-placeholder\cf5 \strokec5  \cf8 \strokec8 >\cf5 \strokec5  \cf2 \strokec2 *\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 absolute\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 top:\cf5 \strokec5  \cf10 \strokec10 0\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 left:\cf5 \strokec5  \cf10 \strokec10 0\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 width:\cf5 \strokec5  \cf10 \strokec10 100%\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 height:\cf5 \strokec5  \cf10 \strokec10 100%\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3        \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3        \cf2 \strokec2 .aspect-portrait-placeholder\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 relative\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 width:\cf5 \strokec5  \cf10 \strokec10 100%\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 padding-bottom:\cf5 \strokec5  \cf10 \strokec10 125%\cf8 \strokec8 ;\cf5 \strokec5  \cf9 \strokec9 /* 4:5 Aspect Ratio */\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3       \cf2 \strokec2 .aspect-portrait-placeholder\cf5 \strokec5  \cf8 \strokec8 >\cf5 \strokec5  \cf2 \strokec2 *\cf5 \strokec5  \cf8 \strokec8 \{\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 position:\cf5 \strokec5  \cf7 \strokec7 absolute\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 top:\cf5 \strokec5  \cf10 \strokec10 0\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 left:\cf5 \strokec5  \cf10 \strokec10 0\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 width:\cf5 \strokec5  \cf10 \strokec10 100%\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3         \cf4 \strokec4 height:\cf5 \strokec5  \cf10 \strokec10 100%\cf8 \strokec8 ;\cf5 \cb1 \strokec5 \
+\cb3       \cf8 \strokec8 \}\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 style\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf2 \strokec2 head\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 <\cf2 \strokec2 body\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \cb3     \cf6 \strokec6 <\cf2 \strokec2 header\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fixed top-0 left-0 right-0 z-50 bg-brand-light/80 backdrop-blur-lg shadow-sm"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "container mx-auto px-6 lg:px-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex items-center justify-end h-24"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 nav\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://calendly.com/d/ctfn-k5n-w6x"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "noopener noreferrer"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "group flex items-center font-sans text-sm font-semibold tracking-wider uppercase text-brand-dark bg-brand-gold shadow-md hover:shadow-lg hover:shadow-brand-gold/40 transition-all duration-300 rounded-sm px-6 py-3 transform hover:-translate-y-0.5"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 svg\cf5 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf7 \strokec7 "http://www.w3.org/2000/svg"\cf5 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf7 \strokec7 "0 0 24 24"\cf5 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf7 \strokec7 "none"\cf5 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf7 \strokec7 "currentColor"\cf5 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-5 h-5 mr-3 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 rect\cf5 \strokec5  \cf4 \strokec4 x\cf6 \strokec6 =\cf7 \strokec7 "3"\cf5 \strokec5  \cf4 \strokec4 y\cf6 \strokec6 =\cf7 \strokec7 "4"\cf5 \strokec5  \cf4 \strokec4 width\cf6 \strokec6 =\cf7 \strokec7 "18"\cf5 \strokec5  \cf4 \strokec4 height\cf6 \strokec6 =\cf7 \strokec7 "18"\cf5 \strokec5  \cf4 \strokec4 rx\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 ry\cf6 \strokec6 =\cf7 \strokec7 "2"\cf6 \strokec6 ></\cf2 \strokec2 rect\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 line\cf5 \strokec5  \cf4 \strokec4 x1\cf6 \strokec6 =\cf7 \strokec7 "16"\cf5 \strokec5  \cf4 \strokec4 y1\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 x2\cf6 \strokec6 =\cf7 \strokec7 "16"\cf5 \strokec5  \cf4 \strokec4 y2\cf6 \strokec6 =\cf7 \strokec7 "6"\cf6 \strokec6 ></\cf2 \strokec2 line\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 line\cf5 \strokec5  \cf4 \strokec4 x1\cf6 \strokec6 =\cf7 \strokec7 "8"\cf5 \strokec5  \cf4 \strokec4 y1\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 x2\cf6 \strokec6 =\cf7 \strokec7 "8"\cf5 \strokec5  \cf4 \strokec4 y2\cf6 \strokec6 =\cf7 \strokec7 "6"\cf6 \strokec6 ></\cf2 \strokec2 line\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 line\cf5 \strokec5  \cf4 \strokec4 x1\cf6 \strokec6 =\cf7 \strokec7 "3"\cf5 \strokec5  \cf4 \strokec4 y1\cf6 \strokec6 =\cf7 \strokec7 "10"\cf5 \strokec5  \cf4 \strokec4 x2\cf6 \strokec6 =\cf7 \strokec7 "21"\cf5 \strokec5  \cf4 \strokec4 y2\cf6 \strokec6 =\cf7 \strokec7 "10"\cf6 \strokec6 ></\cf2 \strokec2 line\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 svg\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \strokec5 Book a Call\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 nav\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 header\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 main\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "pt-24"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf9 \strokec9 <!-- Hero Section -->\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative min-h-[95vh] flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8 py-20 overflow-hidden bg-brand-dark"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute inset-0 h-full w-full overflow-hidden"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://images.unsplash.com/photo-1533134486753-c833f0ed4866?q=80&w=3540&auto=format&fit=crop"\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "Elegant background of black velvety sand with gold glitter"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute z-0 w-full h-full object-cover opacity-50 animate-ken-burns"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative z-10 w-full max-w-6xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm md:text-base tracking-widest text-brand-gold font-medium uppercase mb-8"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               For experts with a world-class offer... but a second-rate funnel.\cb1 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 h1\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-6xl sm:text-7xl lg:text-8xl font-medium tracking-tight text-balance text-brand-light"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               Stop \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "italic text-brand-gold"\cf6 \strokec6 >\cf5 \strokec5 Leaking\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \strokec5  Revenue.\cb1 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 h1\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-3xl sm:text-4xl lg:text-5xl font-light text-brand-gold mt-6 text-balance italic"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               We Will Design, Write, and Build Your Entire High-Converting Sales Funnel For You.\cb1 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.4"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-10 max-w-3xl mx-auto text-xl text-brand-light/80 leading-relaxed text-balance"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               The complete, "done-for-you" service that transforms your expertise into an automated sales machine. All you have to do is show up for the final review.\cb1 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cb1 \
+\cb3           \cf9 \strokec9 <!-- VSL Placeholder -->\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.5"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-12 max-w-3xl mx-auto"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "vsl-trigger"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "aspect-video-placeholder bg-black/50 border border-brand-gold/20 rounded-lg shadow-2xl backdrop-blur-sm group cursor-pointer"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "flex flex-col items-center justify-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-20 h-20 bg-brand-gold/80 rounded-full flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:bg-brand-gold"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 <\cf2 \strokec2 svg\cf5 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf7 \strokec7 "http://www.w3.org/2000/svg"\cf5 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf7 \strokec7 "0 0 24 24"\cf5 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf7 \strokec7 "currentColor"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-10 h-10 text-brand-dark ml-1"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                                 \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M7 6v12l10-6z"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                             \cf6 \strokec6 </\cf2 \strokec2 svg\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-4 font-sans text-sm tracking-wider uppercase text-brand-light"\cf6 \strokec6 >\cf5 \strokec5 Watch The 2-Min Overview\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cb1 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-12"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://calendly.com/d/ctfn-k5n-w6x"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "noopener noreferrer"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "inline-flex items-center justify-center group text-center font-sans font-medium tracking-wider uppercase rounded-sm px-10 py-4 transition-all duration-300 ease-in-out transform shadow-lg text-base text-brand-dark bg-brand-gold hover:shadow-2xl hover:shadow-brand-gold/50 hover:-translate-y-1"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 svg\cf5 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf7 \strokec7 "http://www.w3.org/2000/svg"\cf5 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf7 \strokec7 "0 0 24 24"\cf5 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf7 \strokec7 "none"\cf5 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf7 \strokec7 "currentColor"\cf5 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-5 h-5 mr-3 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 rect\cf5 \strokec5  \cf4 \strokec4 x\cf6 \strokec6 =\cf7 \strokec7 "3"\cf5 \strokec5  \cf4 \strokec4 y\cf6 \strokec6 =\cf7 \strokec7 "4"\cf5 \strokec5  \cf4 \strokec4 width\cf6 \strokec6 =\cf7 \strokec7 "18"\cf5 \strokec5  \cf4 \strokec4 height\cf6 \strokec6 =\cf7 \strokec7 "18"\cf5 \strokec5  \cf4 \strokec4 rx\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 ry\cf6 \strokec6 =\cf7 \strokec7 "2"\cf6 \strokec6 ></\cf2 \strokec2 rect\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 line\cf5 \strokec5  \cf4 \strokec4 x1\cf6 \strokec6 =\cf7 \strokec7 "16"\cf5 \strokec5  \cf4 \strokec4 y1\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 x2\cf6 \strokec6 =\cf7 \strokec7 "16"\cf5 \strokec5  \cf4 \strokec4 y2\cf6 \strokec6 =\cf7 \strokec7 "6"\cf6 \strokec6 ></\cf2 \strokec2 line\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 line\cf5 \strokec5  \cf4 \strokec4 x1\cf6 \strokec6 =\cf7 \strokec7 "8"\cf5 \strokec5  \cf4 \strokec4 y1\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 x2\cf6 \strokec6 =\cf7 \strokec7 "8"\cf5 \strokec5  \cf4 \strokec4 y2\cf6 \strokec6 =\cf7 \strokec7 "6"\cf6 \strokec6 ></\cf2 \strokec2 line\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 line\cf5 \strokec5  \cf4 \strokec4 x1\cf6 \strokec6 =\cf7 \strokec7 "3"\cf5 \strokec5  \cf4 \strokec4 y1\cf6 \strokec6 =\cf7 \strokec7 "10"\cf5 \strokec5  \cf4 \strokec4 x2\cf6 \strokec6 =\cf7 \strokec7 "21"\cf5 \strokec5  \cf4 \strokec4 y2\cf6 \strokec6 =\cf7 \strokec7 "10"\cf6 \strokec6 ></\cf2 \strokec2 line\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 svg\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative z-10"\cf6 \strokec6 >\cf5 \strokec5 Book Your FREE Funnel Strategy Call\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cb1 \
+\cb3       \cf9 \strokec9 <!-- Problem Section -->\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "py-24 md:py-40 bg-brand-light"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "container mx-auto px-6 lg:px-8 max-w-7xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid md:grid-cols-2 gap-12 md:gap-16 items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm tracking-wider text-brand-gold uppercase font-medium mb-4"\cf6 \strokec6 >\cf5 \strokec5 The Bottleneck\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-5xl md:text-6xl font-medium text-brand-dark text-balance leading-tight"\cf6 \strokec6 >\cf5 \strokec5 The Problem Isn't Your Offer. \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "italic text-brand-gold"\cf6 \strokec6 >\cf5 \strokec5 It's Your System.\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 ></\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl text-brand-slate max-w-prose mt-8 leading-relaxed"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       You are brilliant at what you do. Your clients get transformative results. The issue is a chronic leak: \cf6 \strokec6 <\cf2 \strokec2 strong\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-brand-dark font-semibold"\cf6 \strokec6 >\cf5 \strokec5 you lack an automated, predictable system for selling it at scale.\cf6 \strokec6 </\cf2 \strokec2 strong\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative group"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute -inset-4 bg-brand-blush/50 rounded-sm transform transition-transform duration-500 group-hover:rotate-[4deg]"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative z-10 overflow-hidden rounded-sm shadow-xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cb1 \
+\cb3                         \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://i.imgur.com/6NW9oOp.jpeg?v=2"\cf5 \strokec5  \cb1 \
+\cb3                         \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "Frustrated professional representing a business bottleneck."\cf5 \strokec5  \cb1 \
+\cb3                         \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-auto object-cover img-hover-effect"\cf5 \cb1 \strokec5 \
+\cb3                         \cf4 \strokec4 loading\cf6 \strokec6 =\cf7 \strokec7 "lazy"\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3       \cf9 \strokec9 <!-- Solution Section -->\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "py-24 md:py-40 bg-brand-dusty-blue/10"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3          \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "container mx-auto px-6 lg:px-8 max-w-7xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center max-w-4xl mx-auto"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm tracking-wider text-brand-gold uppercase font-medium mb-4"\cf6 \strokec6 >\cf5 \strokec5 The Service\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-5xl md:text-6xl font-medium text-brand-dark text-balance leading-tight"\cf6 \strokec6 >\cf5 \strokec5 The \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "italic text-brand-gold"\cf6 \strokec6 >\cf5 \strokec5 Signature Solution\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \strokec5  Your Business Demands\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl text-brand-slate max-w-3xl mx-auto mt-6 text-balance leading-relaxed"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 Most "funnel" solutions are incomplete. We provide a complete, done-for-you service that fills every capability gap, building your entire sales asset from the ground up.\cb1 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-10 bg-brand-light/80 backdrop-blur-sm h-full rounded-sm card-hover-effect border border-transparent hover:border-brand-blush"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-brand-gold w-12 h-12 mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 svg\cf5 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf7 \strokec7 "http://www.w3.org/2000/svg"\cf5 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf7 \strokec7 "0 0 24 24"\cf5 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf7 \strokec7 "none"\cf5 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf7 \strokec7 "currentColor"\cf5 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf7 \strokec7 "1.5"\cf5 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf7 \strokec7 "round"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 circle\cf5 \strokec5  \cf4 \strokec4 cx\cf6 \strokec6 =\cf7 \strokec7 "12"\cf5 \strokec5  \cf4 \strokec4 cy\cf6 \strokec6 =\cf7 \strokec7 "12"\cf5 \strokec5  \cf4 \strokec4 r\cf6 \strokec6 =\cf7 \strokec7 "10"\cf6 \strokec6 ></\cf2 \strokec2 circle\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 polygon\cf5 \strokec5  \cf4 \strokec4 points\cf6 \strokec6 =\cf7 \strokec7 "16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"\cf6 \strokec6 ></\cf2 \strokec2 polygon\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 circle\cf5 \strokec5  \cf4 \strokec4 cx\cf6 \strokec6 =\cf7 \strokec7 "12"\cf5 \strokec5  \cf4 \strokec4 cy\cf6 \strokec6 =\cf7 \strokec7 "12"\cf5 \strokec5  \cf4 \strokec4 r\cf6 \strokec6 =\cf7 \strokec7 "3"\cf6 \strokec6 ></\cf2 \strokec2 circle\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 svg\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-3xl font-medium text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 Sales Funnel Strategy\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-3 text-brand-slate leading-relaxed"\cf6 \strokec6 >\cf5 \strokec5 Mapping the entire customer journey from first touchpoint to final conversion.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.15"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-10 bg-brand-light/80 backdrop-blur-sm h-full rounded-sm card-hover-effect border border-transparent hover:border-brand-blush"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-brand-gold w-12 h-12 mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 svg\cf5 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf7 \strokec7 "http://www.w3.org/2000/svg"\cf5 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf7 \strokec7 "0 0 24 24"\cf5 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf7 \strokec7 "none"\cf5 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf7 \strokec7 "currentColor"\cf5 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf7 \strokec7 "1.5"\cf5 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf7 \strokec7 "round"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M14 2a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h4a4 4 0 0 0 4-4V6a4 4 0 0 0-4-4h-4z"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M14 2v4h4"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 ><\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M4 10h4"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 ><\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M4 14h4"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 ><\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M4 18h4"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 ><\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M4 6h4"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 svg\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-3xl font-medium text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 World-Class Copy\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-3 text-brand-slate leading-relaxed"\cf6 \strokec6 >\cf5 \strokec5 Writing every headline, email, and CTA to articulate your value and compel action.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-10 bg-brand-light/80 backdrop-blur-sm h-full rounded-sm card-hover-effect border border-transparent hover:border-brand-blush"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-brand-gold w-12 h-12 mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 svg\cf5 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf7 \strokec7 "http://www.w3.org/2000/svg"\cf5 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf7 \strokec7 "0 0 24 24"\cf5 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf7 \strokec7 "none"\cf5 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf7 \strokec7 "currentColor"\cf5 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf7 \strokec7 "1.5"\cf5 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf7 \strokec7 "round"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M12 2L2 7l10 5 10-5-10-5z"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M2 17l10 5 10-5"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M2 12l10 5 10-5"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 svg\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-3xl font-medium text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 High-End Design\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-3 text-brand-slate leading-relaxed"\cf6 \strokec6 >\cf5 \strokec5 Creating a cohesive suite of pages designed to build trust and elevate your brand.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.45"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-10 bg-brand-light/80 backdrop-blur-sm h-full rounded-sm card-hover-effect border border-transparent hover:border-brand-blush"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-brand-gold w-12 h-12 mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 svg\cf5 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf7 \strokec7 "http://www.w3.org/2000/svg"\cf5 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf7 \strokec7 "0 0 24 24"\cf5 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf7 \strokec7 "none"\cf5 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf7 \strokec7 "currentColor"\cf5 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf7 \strokec7 "1.5"\cf5 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf7 \strokec7 "round"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M10 20.5c.5 1 1.5 1.5 2.5 1.5s2-.5 2.5-1.5l1-2c.5-1 1-1.5 2-1.5s1.5.5 2 1.5l1 2c.5 1 1.5 1.5 2.5 1.5s2-.5 2.5-1.5"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M3.5 15c-1 0-1.5.5-1.5 1.5s.5 1.5 1.5 1.5 1.5-.5 1.5-1.5-.5-1.5-1.5-1.5z"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M10 3.5c.5-1 1.5-1.5 2.5-1.5s2 .5 2.5 1.5l1 2c.5 1 1 1.5 2 1.5s1.5-.5 2-1.5l1-2c.5-1 1.5-1.5 2.5-1.5s2 .5 2.5 1.5"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M3.5 9c-1 0-1.5.5-1.5 1.5s.5 1.5 1.5 1.5 1.5-.5 1.5-1.5-.5-1.5-1.5-1.5z"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                         \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M14 12c0 1-1.5 2-2.5 2s-2.5-1-2.5-2 1.5-2 2.5-2 2.5 1 2.5 2z"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 svg\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-3xl font-medium text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 Full Tech Build-Out\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-3 text-brand-slate leading-relaxed"\cf6 \strokec6 >\cf5 \strokec5 Handling all backend integrations and automation so you can remain hands-off.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "p-10 bg-brand-light/80 backdrop-blur-sm h-full rounded-sm card-hover-effect border border-transparent hover:border-brand-blush"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-brand-gold w-12 h-12 mb-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 svg\cf5 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf7 \strokec7 "http://www.w3.org/2000/svg"\cf5 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf7 \strokec7 "0 0 24 24"\cf5 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf7 \strokec7 "none"\cf5 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf7 \strokec7 "currentColor"\cf5 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf7 \strokec7 "1.5"\cf5 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf7 \strokec7 "round"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 rect\cf5 \strokec5  \cf4 \strokec4 x\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 y\cf6 \strokec6 =\cf7 \strokec7 "5"\cf5 \strokec5  \cf4 \strokec4 width\cf6 \strokec6 =\cf7 \strokec7 "20"\cf5 \strokec5  \cf4 \strokec4 height\cf6 \strokec6 =\cf7 \strokec7 "14"\cf5 \strokec5  \cf4 \strokec4 rx\cf6 \strokec6 =\cf7 \strokec7 "2"\cf6 \strokec6 ></\cf2 \strokec2 rect\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "m2 7 10 7 10-7"\cf6 \strokec6 ></\cf2 \strokec2 path\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 svg\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-3xl font-medium text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 Email Automation\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-3 text-brand-slate leading-relaxed"\cf6 \strokec6 >\cf5 \strokec5 Building the nurture and follow-up sequences that convert leads on autopilot.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3       \cf9 \strokec9 <!-- Founder Section -->\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "py-24 md:py-40 bg-brand-dusty-blue/10"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "container mx-auto px-6 lg:px-8 max-w-7xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid grid-cols-1 md:grid-cols-5 gap-12 md:gap-16 items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 <!-- Image Column -->\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:col-span-2 js-scroll-trigger opacity-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative group"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute -inset-4 bg-brand-blush/50 rounded-sm transform transition-transform duration-500 group-hover:rotate-[-3deg]"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative z-10 overflow-hidden rounded-sm shadow-xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                    \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cb1 \
+\cb3                     \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://i.imgur.com/vvIGKpJ.jpeg?v=2"\cf5 \strokec5  \cb1 \
+\cb3                     \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "Portrait of Ilona, founder of Haus of Ilona."\cf5 \strokec5  \cb1 \
+\cb3                     \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-auto object-cover img-hover-effect"\cf5 \cb1 \strokec5 \
+\cb3                     \cf4 \strokec4 loading\cf6 \strokec6 =\cf7 \strokec7 "lazy"\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 <!-- Text Column -->\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:col-span-3 js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm tracking-wider text-brand-gold uppercase font-medium mb-4"\cf6 \strokec6 >\cf5 \strokec5 The Architect\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-5xl md:text-6xl font-medium text-brand-dark text-balance leading-tight"\cf6 \strokec6 >\cf5 \strokec5 Meet Ilona\cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-2xl text-brand-slate mt-4 italic"\cf6 \strokec6 >\cf5 \strokec5 The architect behind your next breakthrough.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl text-brand-slate max-w-prose mt-8 leading-relaxed"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 For over a decade, I've been obsessed with a single question: why do world-class experts so often struggle with second-rate sales systems?\cb1 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 br\cf6 \strokec6 ><\cf2 \strokec2 br\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 Haus of Ilona was born from that obsession. It's not just a service; it's my mission to build the elegant, high-performance sales assets that your expertise truly deserves. We handle every detail, so you can focus on what you do best: changing lives.\cb1 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-10"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "#cta"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans font-semibold text-brand-dark tracking-wider group"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \strokec5 Let's Build Your Legacy\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "inline-block transition-transform duration-300 group-hover:translate-x-2 ml-2"\cf6 \strokec6 >\cf5 \strokec5 &rarr;\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3       \cf9 \strokec9 <!-- Case Studies Section -->\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "py-24 md:py-40 bg-brand-dusty-blue/10 overflow-hidden"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "container mx-auto px-6 lg:px-8 max-w-7xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-center max-w-4xl mx-auto"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm tracking-wider text-brand-gold uppercase font-medium mb-4"\cf6 \strokec6 >\cf5 \strokec5 Client Journeys\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-5xl md:text-6xl font-medium text-brand-dark text-balance leading-tight"\cf6 \strokec6 >\cf5 \strokec5 From Bottleneck to \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "italic text-brand-gold"\cf6 \strokec6 >\cf5 \strokec5 Breakthrough\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 ></\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl text-brand-slate max-w-3xl mx-auto mt-6 text-balance leading-relaxed"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 We partner with world-class experts to build the systems their businesses deserve. The journey is a story of strategic collaboration.\cb1 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-24 space-y-20"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 <!-- Case Study 1 -->\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid md:grid-cols-12 gap-x-8 gap-y-4 items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:col-span-4 lg:col-span-3 text-center md:text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-4xl font-medium text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 Coach Mike\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-brand-gold tracking-wider uppercase font-semibold"\cf6 \strokec6 >\cf5 \strokec5 Health & Wellness\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:col-span-8 lg:col-span-9 relative p-8 md:p-12 bg-white rounded-sm border border-brand-blush/50 shadow-lg"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute -top-10 -right-10 md:-top-14 md:-right-14 transform rotate-6 bg-brand-gold text-brand-dark text-center rounded-sm shadow-xl p-4 w-40"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif font-bold text-5xl leading-none tracking-tighter"\cf6 \strokec6 >\cf5 \strokec5 5.4x\cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm font-semibold tracking-wider uppercase mt-1"\cf6 \strokec6 >\cf5 \strokec5 Conversion Rate\cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "space-y-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.1"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm tracking-wider uppercase text-brand-slate font-semibold"\cf6 \strokec6 >\cf5 \strokec5 The Challenge\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg text-brand-slate"\cf6 \strokec6 >\cf5 \strokec5 His funnel booked 134 calls but only closed 5 clients. The system was attracting quantity, not the \cf6 \strokec6 <\cf2 \strokec2 strong\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 quality\cf6 \strokec6 </\cf2 \strokec2 strong\cf6 \strokec6 >\cf5 \strokec5  of leads his high-ticket offer demanded.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-px bg-gradient-to-r from-brand-gold/0 via-brand-gold/50 to-brand-gold/0"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                        \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm tracking-wider uppercase text-brand-gold font-semibold"\cf6 \strokec6 >\cf5 \strokec5 The Breakthrough\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg text-brand-slate"\cf6 \strokec6 >\cf5 \strokec5 We re-engineered his VSL funnel to pre-qualify and pre-sell leads. In the following month, 127 calls resulted in \cf6 \strokec6 <\cf2 \strokec2 strong\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 27 new high-ticket clients.\cf6 \strokec6 </\cf2 \strokec2 strong\cf6 \strokec6 ></\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3              \cf9 \strokec9 <!-- Case Study 2 -->\cf5 \cb1 \strokec5 \
+\cb3              \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid md:grid-cols-12 gap-x-8 gap-y-4 items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:col-span-4 lg:col-span-3 text-center md:text-right md:order-2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-4xl font-medium text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 Dee\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-brand-gold tracking-wider uppercase font-semibold"\cf6 \strokec6 >\cf5 \strokec5 Empowerment Coach\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:col-span-8 lg:col-span-9 relative p-8 md:p-12 bg-white rounded-sm border border-brand-blush/50 shadow-lg md:order-1"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute -top-10 -left-10 md:-top-14 md:-left-14 transform -rotate-6 bg-brand-gold text-brand-dark text-center rounded-sm shadow-xl p-4 w-40"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif font-bold text-5xl leading-none tracking-tighter"\cf6 \strokec6 >\cf5 \strokec5 16x\cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm font-semibold tracking-wider uppercase mt-1"\cf6 \strokec6 >\cf5 \strokec5 ROAS\cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "space-y-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.1"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm tracking-wider uppercase text-brand-slate font-semibold"\cf6 \strokec6 >\cf5 \strokec5 The Challenge\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg text-brand-slate"\cf6 \strokec6 >\cf5 \strokec5 Dee had a powerful message but needed a cost-effective way to launch her offer and enroll her first clients without a massive ad budget.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                      \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-px bg-gradient-to-r from-brand-gold/0 via-brand-gold/50 to-brand-gold/0"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                        \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm tracking-wider uppercase text-brand-gold font-semibold"\cf6 \strokec6 >\cf5 \strokec5 The Breakthrough\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg text-brand-slate"\cf6 \strokec6 >\cf5 \strokec5 With a simple, elegant webinar funnel we built, she invested just \cf6 \strokec6 <\cf2 \strokec2 strong\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 $250 in ads\cf6 \strokec6 </\cf2 \strokec2 strong\cf6 \strokec6 >\cf5 \strokec5  to generate \cf6 \strokec6 <\cf2 \strokec2 strong\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 $4,000 in revenue\cf6 \strokec6 </\cf2 \strokec2 strong\cf6 \strokec6 >\cf5 \strokec5 , proving the model and giving her the capital to scale.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf9 \strokec9 <!-- Case Study 3 -->\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid md:grid-cols-12 gap-x-8 gap-y-4 items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:col-span-4 lg:col-span-3 text-center md:text-right"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 h3\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-4xl font-medium text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 Abby\cf6 \strokec6 </\cf2 \strokec2 h3\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-brand-gold tracking-wider uppercase font-semibold"\cf6 \strokec6 >\cf5 \strokec5 Amazon FBA Coach\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:col-span-8 lg:col-span-9 relative p-8 md:p-12 bg-white rounded-sm border border-brand-blush/50 shadow-lg"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute -top-10 -right-10 md:-top-14 md:-right-14 transform rotate-6 bg-brand-gold text-brand-dark text-center rounded-sm shadow-xl p-4 w-40"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif font-bold text-5xl leading-none tracking-tighter"\cf6 \strokec6 >\cf5 \strokec5 $100K\cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm font-semibold tracking-wider uppercase mt-1"\cf6 \strokec6 >\cf5 \strokec5 Peak Month\cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "space-y-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.1"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm tracking-wider uppercase text-brand-slate font-semibold"\cf6 \strokec6 >\cf5 \strokec5 The Challenge\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg text-brand-slate"\cf6 \strokec6 >\cf5 \strokec5 Abby was an organic marketing powerhouse, growing a massive social following. Yet, her income was stuck at $2k/month. She had the audience but no system to predictably convert followers into high-ticket clients.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-px bg-gradient-to-r from-brand-gold/0 via-brand-gold/50 to-brand-gold/0"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.3"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                        \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm tracking-wider uppercase text-brand-gold font-semibold"\cf6 \strokec6 >\cf5 \strokec5 The Breakthrough\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-lg text-brand-slate"\cf6 \strokec6 >\cf5 \strokec5 We designed and implemented an automated sales funnel that monetized her audience on autopilot. She rapidly scaled past $20k, then $40k months, and went on to have \cf6 \strokec6 <\cf2 \strokec2 strong\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-brand-dark"\cf6 \strokec6 >\cf5 \strokec5 $80k and $100k months\cf6 \strokec6 </\cf2 \strokec2 strong\cf6 \strokec6 >\cf5 \strokec5 , transforming her influence into a true empire.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3       \cf9 \strokec9 <!-- Payoff Section -->\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "py-24 md:py-40 bg-brand-light"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "container mx-auto px-6 lg:px-8 max-w-7xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "grid md:grid-cols-2 gap-12 md:gap-16 items-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:order-2 js-scroll-trigger opacity-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm tracking-wider text-brand-gold uppercase font-medium mb-4"\cf6 \strokec6 >\cf5 \strokec5 The Payoff\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-5xl md:text-6xl font-medium text-brand-dark text-balance leading-tight"\cf6 \strokec6 >\cf5 \strokec5 Focus On What You Do Best. \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "italic text-brand-gold"\cf6 \strokec6 >\cf5 \strokec5 We'll Handle the Rest.\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 ></\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-xl text-brand-slate max-w-prose mt-8 leading-relaxed"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       Imagine the peace of mind that comes from knowing you have a predictable, automated system generating qualified calls for your business, 24/7. This isn't just about more revenue; it's about \cf6 \strokec6 <\cf2 \strokec2 strong\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "text-brand-dark font-semibold"\cf6 \strokec6 >\cf5 \strokec5 reclaiming your time and scaling your impact.\cf6 \strokec6 </\cf2 \strokec2 strong\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "md:order-1 js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative group"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute -inset-4 bg-brand-dusty-blue/20 rounded-sm transform transition-transform duration-500 group-hover:rotate-[-4deg]"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative z-10 overflow-hidden rounded-sm shadow-xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cb1 \
+\cb3                         \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://i.imgur.com/lSpsD1y.jpeg?v=1"\cf5 \strokec5  \cb1 \
+\cb3                         \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "A successful professional feeling relieved and accomplished."\cf5 \strokec5  \cb1 \
+\cb3                         \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-full h-auto object-cover img-hover-effect"\cf5 \cb1 \strokec5 \
+\cb3                         \cf4 \strokec4 loading\cf6 \strokec6 =\cf7 \strokec7 "lazy"\cf5 \cb1 \strokec5 \
+\cb3                       \cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cb1 \
+\cb3       \cf9 \strokec9 <!-- CTA Section -->\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 section\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "cta"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative py-24 md:py-40 bg-brand-dark text-brand-light"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute inset-0 h-full w-full overflow-hidden"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 img\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "https://images.unsplash.com/photo-1599233827598-c913c3583c27?q=80&w=3538&auto=format&fit=crop"\cf5 \strokec5  \cf4 \strokec4 alt\cf6 \strokec6 =\cf7 \strokec7 "Abstract gold and black texture"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute z-0 w-full h-full object-cover opacity-20"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/80 to-brand-dark"\cf6 \strokec6 ></\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative z-10 container mx-auto px-6 lg:px-8 text-center max-w-4xl"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 h2\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-serif text-5xl md:text-7xl font-medium text-balance leading-tight"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               Ready to Build Your \cf6 \strokec6 <\cf2 \strokec2 span\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "italic text-brand-gold"\cf6 \strokec6 >\cf5 \strokec5 Legacy\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \strokec5  Asset?\cb1 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 h2\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-8 text-xl max-w-3xl mx-auto text-brand-light/80 leading-relaxed text-balance"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               Your expertise deserves a world-class system to sell it. Let's have a brief, no-pressure conversation to map out what that system could look like for your business.\cb1 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "js-scroll-trigger opacity-0"\cf5 \strokec5  \cf4 \strokec4 data-delay\cf6 \strokec6 =\cf7 \strokec7 "0.2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-12"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 a\cf5 \strokec5  \cf4 \strokec4 href\cf6 \strokec6 =\cf7 \strokec7 "https://calendly.com/d/ctfn-k5n-w6x"\cf5 \strokec5  \cf4 \strokec4 target\cf6 \strokec6 =\cf7 \strokec7 "_blank"\cf5 \strokec5  \cf4 \strokec4 rel\cf6 \strokec6 =\cf7 \strokec7 "noopener noreferrer"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "inline-flex items-center justify-center group text-center font-sans font-medium tracking-wider uppercase rounded-sm px-10 py-4 transition-all duration-300 ease-in-out transform shadow-lg text-base text-brand-dark bg-brand-gold hover:shadow-2xl hover:shadow-brand-gold/50 hover:-translate-y-1"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 svg\cf5 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf7 \strokec7 "http://www.w3.org/2000/svg"\cf5 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf7 \strokec7 "0 0 24 24"\cf5 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf7 \strokec7 "none"\cf5 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf7 \strokec7 "currentColor"\cf5 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-5 h-5 mr-3 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-6"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 rect\cf5 \strokec5  \cf4 \strokec4 x\cf6 \strokec6 =\cf7 \strokec7 "3"\cf5 \strokec5  \cf4 \strokec4 y\cf6 \strokec6 =\cf7 \strokec7 "4"\cf5 \strokec5  \cf4 \strokec4 width\cf6 \strokec6 =\cf7 \strokec7 "18"\cf5 \strokec5  \cf4 \strokec4 height\cf6 \strokec6 =\cf7 \strokec7 "18"\cf5 \strokec5  \cf4 \strokec4 rx\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 ry\cf6 \strokec6 =\cf7 \strokec7 "2"\cf6 \strokec6 ></\cf2 \strokec2 rect\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 line\cf5 \strokec5  \cf4 \strokec4 x1\cf6 \strokec6 =\cf7 \strokec7 "16"\cf5 \strokec5  \cf4 \strokec4 y1\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 x2\cf6 \strokec6 =\cf7 \strokec7 "16"\cf5 \strokec5  \cf4 \strokec4 y2\cf6 \strokec6 =\cf7 \strokec7 "6"\cf6 \strokec6 ></\cf2 \strokec2 line\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 line\cf5 \strokec5  \cf4 \strokec4 x1\cf6 \strokec6 =\cf7 \strokec7 "8"\cf5 \strokec5  \cf4 \strokec4 y1\cf6 \strokec6 =\cf7 \strokec7 "2"\cf5 \strokec5  \cf4 \strokec4 x2\cf6 \strokec6 =\cf7 \strokec7 "8"\cf5 \strokec5  \cf4 \strokec4 y2\cf6 \strokec6 =\cf7 \strokec7 "6"\cf6 \strokec6 ></\cf2 \strokec2 line\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                   \cf6 \strokec6 <\cf2 \strokec2 line\cf5 \strokec5  \cf4 \strokec4 x1\cf6 \strokec6 =\cf7 \strokec7 "3"\cf5 \strokec5  \cf4 \strokec4 y1\cf6 \strokec6 =\cf7 \strokec7 "10"\cf5 \strokec5  \cf4 \strokec4 x2\cf6 \strokec6 =\cf7 \strokec7 "21"\cf5 \strokec5  \cf4 \strokec4 y2\cf6 \strokec6 =\cf7 \strokec7 "10"\cf6 \strokec6 ></\cf2 \strokec2 line\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 </\cf2 \strokec2 svg\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3                 \cf6 \strokec6 <\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \strokec5 Book Your FREE Funnel Strategy Call\cf6 \strokec6 </\cf2 \strokec2 span\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 </\cf2 \strokec2 a\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3               \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "mt-6 text-sm text-brand-slate tracking-wide"\cf6 \strokec6 >\cf5 \strokec5 100% free, no obligation.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 section\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 main\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cb1 \
+\cb3     \cf9 \strokec9 <!-- VSL Modal -->\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "vsl-modal"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "fixed inset-0 z-[100] bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 transition-opacity duration-300 opacity-0 pointer-events-none"\cf5 \strokec5  \cf4 \strokec4 role\cf6 \strokec6 =\cf7 \strokec7 "dialog"\cf5 \strokec5  \cf4 \strokec4 aria-modal\cf6 \strokec6 =\cf7 \strokec7 "true"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "vsl-modal-content"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "relative w-full max-w-4xl bg-brand-dark rounded-lg shadow-2xl transform transition-transform duration-300 scale-95"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "aspect-video-placeholder"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 iframe\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "vsl-iframe"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "rounded-lg"\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 ""\cf5 \strokec5  \cf4 \strokec4 data-src\cf6 \strokec6 =\cf7 \strokec7 "https://www.youtube.com/embed/g6Ebs4xW7u8?autoplay=1&rel=0&showinfo=0&modestbranding=1"\cf5 \strokec5  \cf4 \strokec4 title\cf6 \strokec6 =\cf7 \strokec7 "Video Sales Letter"\cf5 \strokec5  \cf4 \strokec4 frameborder\cf6 \strokec6 =\cf7 \strokec7 "0"\cf5 \strokec5  \cf4 \strokec4 allow\cf6 \strokec6 =\cf7 \strokec7 "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"\cf5 \strokec5  \cf4 \strokec4 allowfullscreen\cf6 \strokec6 ></\cf2 \strokec2 iframe\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 button\cf5 \strokec5  \cf4 \strokec4 id\cf6 \strokec6 =\cf7 \strokec7 "vsl-close"\cf5 \strokec5  \cf4 \strokec4 aria-label\cf6 \strokec6 =\cf7 \strokec7 "Close video player"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "absolute -top-4 -right-4 w-10 h-10 bg-brand-gold text-brand-dark rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 <\cf2 \strokec2 svg\cf5 \strokec5  \cf4 \strokec4 xmlns\cf6 \strokec6 =\cf7 \strokec7 "http://www.w3.org/2000/svg"\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "w-6 h-6"\cf5 \strokec5  \cf4 \strokec4 fill\cf6 \strokec6 =\cf7 \strokec7 "none"\cf5 \strokec5  \cf4 \strokec4 viewBox\cf6 \strokec6 =\cf7 \strokec7 "0 0 24 24"\cf5 \strokec5  \cf4 \strokec4 stroke\cf6 \strokec6 =\cf7 \strokec7 "currentColor"\cf5 \strokec5  \cf4 \strokec4 stroke-width\cf6 \strokec6 =\cf7 \strokec7 "2"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3             \cf6 \strokec6 <\cf2 \strokec2 path\cf5 \strokec5  \cf4 \strokec4 stroke-linecap\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 stroke-linejoin\cf6 \strokec6 =\cf7 \strokec7 "round"\cf5 \strokec5  \cf4 \strokec4 d\cf6 \strokec6 =\cf7 \strokec7 "M6 18L18 6M6 6l12 12"\cf5 \strokec5  \cf6 \strokec6 />\cf5 \cb1 \strokec5 \
+\cb3           \cf6 \strokec6 </\cf2 \strokec2 svg\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 </\cf2 \strokec2 button\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 footer\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "bg-brand-dark text-brand-light/50 py-16"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 <\cf2 \strokec2 div\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "container mx-auto px-6 lg:px-8 text-center"\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3         \cf6 \strokec6 <\cf2 \strokec2 p\cf5 \strokec5  \cf4 \strokec4 class\cf6 \strokec6 =\cf7 \strokec7 "font-sans text-sm tracking-wider"\cf6 \strokec6 >\cf5 \strokec5 &copy; 2024 Haus of Ilona. All Rights Reserved.\cf6 \strokec6 </\cf2 \strokec2 p\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3       \cf6 \strokec6 </\cf2 \strokec2 div\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cb3     \cf6 \strokec6 </\cf2 \strokec2 footer\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+\cb3     \cf6 \strokec6 <\cf2 \strokec2 script\cf5 \strokec5  \cf4 \strokec4 type\cf6 \strokec6 =\cf7 \strokec7 "module"\cf5 \strokec5  \cf4 \strokec4 src\cf6 \strokec6 =\cf7 \strokec7 "/index.tsx"\cf6 \strokec6 ></\cf2 \strokec2 script\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\pard\pardeftab720\partightenfactor0
+\cf6 \cb3 \strokec6 </\cf2 \strokec2 body\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\cf6 \cb3 \strokec6 </\cf2 \strokec2 html\cf6 \strokec6 >\cf5 \cb1 \strokec5 \
+\
+}
